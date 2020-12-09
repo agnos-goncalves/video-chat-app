@@ -28,15 +28,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "electron-start": "electron .",
+    "build": "yarn react-build && yarn electron-build",
     "react-build": "react-scripts build",
     "react-test": "react-scripts test --env=jsdom",
     "react-eject": "react-scripts eject",
     "electron-build": "yarn make",
-    "build": "yarn react-build && yarn electron-build",
-    "build-start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
+    "electron-start": "electron-forge start",
+    "electron-package": "electron-forge package",
+    "electron-make": "electron-forge make"
   },
   "eslintConfig": {
     "extends": [
